@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ömrüm🤍</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #text {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 48px;
+            font-weight: bold;
+            color: hsla(0,100%,70%,.8);
+            text-shadow: 0 0 10px hsla(0,100%,70%,.8),
+                         0 0 20px hsla(0,100%,60%,.6),
+                         0 0 30px hsla(0,100%,50%,.4);
+            animation: glow 2s infinite alternate;
+            font-family: "Arial", sans-serif;
+        }
+
+        @keyframes glow {
+            0%   { text-shadow: 0 0 5px hsla(0,100%,70%,.6), 0 0 15px hsla(0,100%,60%,.4); }
+            100% { text-shadow: 0 0 20px hsla(0,100%,90%,1), 0 0 40px hsla(0,100%,70%,.8); }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="heart"></canvas>
+    <div id="text">Ayşemm</div>
+    <script src="script.js"></script>
+</body>
+</html>
